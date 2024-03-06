@@ -10,10 +10,12 @@ namespace CMP1903_A1_2324
     {
         static void Main(string[] args)
         {
-            /*
-             * Create a Game object and call its methods.
-             * Create a Testing object to verify the output and operation of the other classes.
-             */
+            Game game = new Game();
+            int sum = game.sumGame();
+            Console.WriteLine("The sum of the three dice rolls is: " + sum);
+
+            Testing testing = new Testing();
+            testing.Tests();
         }
     }
 }

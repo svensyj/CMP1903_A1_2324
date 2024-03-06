@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,19 @@ namespace CMP1903_A1_2324
 {
     internal class Testing
     {
-        /*
-         * This class should test the Game and the Die class.
-         * Create a Game object, call the methods and compare their output to expected output.
-         * Create a Die object and call its method.
-         * Use debug.assert() to make the comparisons and tests.
-         */
 
-        //Method
+        public void Tests()
+        {
+            Game game = new Game();
+            int sum = game.sumGame();
+            Debug.Assert(sum >= 3 && sum <= 18, "Sum of dice is not between 3 and 18.");
+            foreach (var die in game.dice)
+            {
+                Debug.Assert(die.dieRolled >= 1 && die.dieRolled <= 6, "Die is not between 1 and 6");
+            }
+
+            Console.WriteLine("Tests have been passed successfully.");
+
+        }
     }
 }
