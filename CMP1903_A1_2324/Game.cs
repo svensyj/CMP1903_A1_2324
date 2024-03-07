@@ -14,7 +14,7 @@ namespace CMP1903_A1_2324
         {
             dice = new Die[3]; // Empty array of 3 Die objects
             for (int i = 0; i < 3; i++) 
-            {                          // 16- 18 creates an instance for the Die class for each empty slot in the array.
+            {                          // 16 - 18 creates an instance for the Die class for each empty slot in the array.
                 dice[i] = new Die(); 
             }
         }

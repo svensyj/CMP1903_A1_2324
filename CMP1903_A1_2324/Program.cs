@@ -17,6 +17,8 @@ namespace CMP1903_A1_2324
 
             Testing testing = new Testing(); // Creates Testing class instance
             testing.Tests(); // Calls the Tests to execute the tests needed
+
+            Console.ReadLine();
         }
     }
 }
