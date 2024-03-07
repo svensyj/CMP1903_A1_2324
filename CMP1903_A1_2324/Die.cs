@@ -19,7 +19,7 @@ namespace CMP1903_A1_2324
 
         public int Roll()
         {
-            DieRolled = random.Next(1, 7); // Generates random number between 1 and 6, and then the DieRolled will be stored in the property waiting to be used.
+            dieRolled = random.Next(1, 7); // Generates random number between 1 and 6, and then the DieRolled will be stored in the property waiting to be used.
             return dieRolled;
         }
 
